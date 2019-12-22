@@ -1,0 +1,20 @@
+get:
+  - in: path
+    name: petId
+    schema:
+      type: integer
+    required: true
+
+patch:
+  - in: path
+    name: petId
+    schema:
+      type: integer
+    required: true
+
+delete:
+  - in: path
+    name: petId
+    schema:
+      type: integer
+    required: true

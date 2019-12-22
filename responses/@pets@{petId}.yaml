@@ -1,0 +1,41 @@
+get:
+  200:
+    content:
+      application/json:
+        schema:
+          allOf:
+            - $ref: ./base.yaml
+            - type: object
+              properties:
+                result:
+                  $ref: ../schemas/Pet.yaml
+  400:
+    $ref: ./errors.yaml#/HTTPError
+
+patch:
+  200:
+    content:
+      application/json:
+        schema:
+          allOf:
+            - $ref: ./base.yaml
+            - type: object
+              properties:
+                result:
+                  $ref: ../schemas/Pet.yaml
+  400:
+    $ref: ./errors.yaml#/HTTPError
+
+delete:
+  200:
+    content:
+      application/json:
+        schema:
+          allOf:
+            - $ref: ./base.yaml
+            - type: object
+              properties:
+                result:
+                  $ref: ../schemas/Pet.yaml
+  400:
+    $ref: ./errors.yaml#/HTTPError

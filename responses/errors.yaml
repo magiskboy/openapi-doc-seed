@@ -1,0 +1,18 @@
+HTTPError:
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          name:
+            type: string
+          errors:
+            type: array
+            items:
+              type: object
+              properties:
+                field:
+                  type: string
+                message:
+                  type: string
+
